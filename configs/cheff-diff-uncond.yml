@@ -58,7 +58,7 @@ model:
 data:
   params:
     batch_size: 32
-    machex_path: /machex
+    machex_path: /archive/datasets/machex
     test_size: 25000
     num_workers: 16
 
@@ -73,5 +73,5 @@ lightning:
         increase_log_steps: False
 
   trainer:
-    gpus: 8
+    gpus: 4
     benchmark: False

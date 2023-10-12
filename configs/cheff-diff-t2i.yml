@@ -41,7 +41,7 @@ model:
         legacy: False
 
     first_stage_config:
-      target: ldm.models.autoencoder.AutoencoderKL
+      target: cheff.ldm.models.autoencoder.AutoencoderKL
       params:
         embed_dim: 3
         ckpt_path: trained_models/cheff_autoencoder.pt
@@ -73,7 +73,7 @@ model:
 data:
   params:
     batch_size: 8
-    machex_path: /machex
+    machex_path: /archive/datasets/machex
     test_size: 10000
     num_workers: 16
     mimic: true
