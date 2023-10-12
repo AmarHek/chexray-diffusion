@@ -90,3 +90,10 @@ lightning:
   trainer:
     gpus: 4
     benchmark: False
+
+  logger:
+    target: pytorch_lightning.loggers.WandbLogger
+    params:
+      project: 'cheff'
+      save_dir: 'logs'
+      offline: False
