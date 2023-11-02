@@ -26,15 +26,15 @@ model:
 
 data:
   params:
-    batch_size: 4
-    machex_path: /archive/datasets/machex
+    batch_size: 12
+    machex_path: /mnt/sharegpu/group_data/hekalo_a/machex
     test_size: 25000
     num_workers: 16
 
 lightning:
   callbacks:
     image_logger:
-      target: scripts.01_train_ldm.ImageLogger
+      target: lib.loggers.ImageLogger
       params:
         batch_frequency: 2500
         max_images: 8
@@ -44,10 +44,3 @@ lightning:
     gpus: 2
     benchmark: False
     precision: 32
-
-  logger:
-    target: pytorch_lightning.loggers.WandbLogger
-    params:
-      project: 'cheff'
-      save_dir: 'logs'
-      offline: False
