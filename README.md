@@ -50,7 +50,7 @@ The full config files are located in `configs`. After adjusting the paths, the t
 can be started as follows:
 
 ```shell
-python scripts/01_train_ldm.py -b <path/to/config.yml> -t --no-test
+python scripts/train_ldm.py -b <path/to/config.yml> -t --no-test
 ```
 
 ### Training the Super-Resolution Model

@@ -5,9 +5,9 @@ from typing import Union, Dict, Optional
 import torch
 from torch import Tensor
 
-from cheff.ldm.models.autoencoder import AutoencoderKL
-from cheff.ldm.models.diffusion.ddpm import LatentDiffusion
-from cheff.ldm.models.diffusion.ddim import DDIMSampler
+from models.autoencoder import AutoencoderKL
+from models.diffusion.ddpm import LatentDiffusion
+from models.diffusion.ddim import DDIMSampler
 
 
 class CheffAEModel:

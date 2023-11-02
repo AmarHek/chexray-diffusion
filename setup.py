@@ -4,7 +4,8 @@ setup(
     name='cheff',
     version='0.0.1',
     description='',
-    packages=find_packages(),
+    packages=find_packages('src'),
+    package_dir={'': 'src'},
     install_requires=[
         'torch',
         'numpy',
