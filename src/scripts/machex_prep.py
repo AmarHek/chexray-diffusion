@@ -7,7 +7,7 @@ if __name__ == "__main__":
     # Easiest solution: Iterate through all json-files and replace the paths
 
     old_root = "/archive/datasets/machex/"
-    root_path = "/mnt/sharegpu/group_data/hekalo_a/machex/"
+    root_path = "/scratch/hekalo/Datasets/machex/"
 
     # get all datasets like this, since os.walk would take too long
     datasets = os.listdir(root_path)
