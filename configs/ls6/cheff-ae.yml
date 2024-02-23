@@ -41,6 +41,6 @@ lightning:
         increase_log_steps: True
 
   trainer:
-    gpus: 2
+    gpus: 1
     benchmark: False
     precision: 32
