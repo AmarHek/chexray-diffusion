@@ -48,7 +48,7 @@ model:
         ddconfig:
           double_z: True
           z_channels: 3
-          resolution: 256
+          resolution: 64
           in_channels: 3
           out_ch: 3
           ch: 128
@@ -73,7 +73,7 @@ model:
 data:
   params:
     batch_size: 8
-    machex_path: /mnt/sharegpu/group_data/hekalo_a/machex
+    machex_path: /scratch/hekalo/Datasets/machex/
     test_size: 10000
     num_workers: 16
     mimic: true
